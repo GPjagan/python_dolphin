@@ -3,6 +3,7 @@ resource "aws_s3_bucket" "Storage_bucket" {
   force_destroy = true
 }
 
+
 #resource "aws_iam_role" "lambda_exec_role" {
 #  name = "lambda_exec_role"
 #  assume_role_policy = jsonencode({
