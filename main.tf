@@ -6,9 +6,6 @@ resource "aws_s3_bucket" "storage_bucket" {
   bucket        = "s3-bucket-storage"
   force_destroy = true
 }
-
-
-
 #resource "aws_iam_role" "lambda_exec_role" {
 #  name = "lambda_exec_role"
 #  assume_role_policy = jsonencode({
