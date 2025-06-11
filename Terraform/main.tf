@@ -46,6 +46,7 @@ resource "aws_cloudwatch_event_target" "invoke_lambda" {
   arn       = aws_lambda_function.mechanism_x.arn
 }
 
+
 resource "aws_lambda_permission" "allow_event_invoke" {
   statement_id  = "AllowExecutionFromCloudWatch"
   action        = "lambda:InvokeFunction"
