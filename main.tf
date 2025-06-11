@@ -4,7 +4,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "storage_bucket" {
-  bucket        = "s3-bucket-storage"
+  bucket        = "jagan-storage-system"
   force_destroy = true
 }
 
