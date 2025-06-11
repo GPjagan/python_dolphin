@@ -2,10 +2,11 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "Storage_bucket" {
-  bucket = "s3_bucket_storage"
+resource "aws_s3_bucket" "storage_bucket" {
+  bucket        = "s3-bucket-storage"
   force_destroy = true
 }
+
 
 
 #resource "aws_iam_role" "lambda_exec_role" {
