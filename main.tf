@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "ap-southeast-2"
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "storage_bucket" {
-  bucket = "s3-bucket-storage-D7635648264748"
+  bucket = "s3-bucket-storage-D7635648264748J"
   force_destroy = true
 }
 
