@@ -1,10 +1,15 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-1"  # Change this to your preferred AWS region
 }
 
-resource "aws_s3_bucket" "storage_bucket" {
-  bucket = "s3-hari-hari-D7635648264748J"
-  force_destroy = true
+resource "aws_s3_bucket" "example_bucket" {
+  bucket        = "my-unique-s3-bucket-202506121234543212345"  # Must be globally unique
+  force_destroy = true                            # Deletes non-empty buckets on destroy
+
+  tags = {
+    Name        = "ExampleBucket"
+    Environment = "Dev"
+  }
 }
 
 #resource "aws_iam_role" "lambda_exec_role" {
