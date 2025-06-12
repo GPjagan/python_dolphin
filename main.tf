@@ -3,13 +3,10 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "storage_bucket" {
-  bucket = "s3-bucket-storage-${random_id.suffix.hex}"
+  bucket = "s3-bucket-storage-D7635648264748"
   force_destroy = true
 }
 
-resource "random_id" "suffix" {
-  byte_length = 4
-}
 #resource "aws_iam_role" "lambda_exec_role" {
 #  name = "lambda_exec_role"
 #  assume_role_policy = jsonencode({
