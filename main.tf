@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "storage_bucket" {
-  bucket = "s3-bucket-storage-D7635648264748J"
+  bucket = "s3-hari-hari-D7635648264748J"
   force_destroy = true
 }
 
